@@ -60,6 +60,11 @@ func runAgent(ctx context.Context) error {
 }
 
 func getRootAgent(m model.LLM, googleSearch tool.Tool) (agent.Agent, error) {
+	inputParserAgent, err := subagents.GetInputParserAgent(m)
+	if err != nil {
+		return nil, err
+	}
+
 	parallelResearchAgent, err := subagents.GetParallelResearchAgent(m, googleSearch)
 	if err != nil {
 		return nil, err
@@ -85,6 +90,7 @@ func getRootAgent(m model.LLM, googleSearch tool.Tool) (agent.Agent, error) {
 			Name:        constants.AppName,
 			Description: "Comprehensive criticism research agent that uses parallel search and iterative refinement to find all criticisms about a topic.",
 			SubAgents: []agent.Agent{
+				inputParserAgent,
 				parallelResearchAgent,
 				synthesisAgent,
 				refinementLoop,

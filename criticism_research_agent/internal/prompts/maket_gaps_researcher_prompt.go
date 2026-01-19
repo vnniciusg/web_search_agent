@@ -112,5 +112,5 @@ UNDERSERVED SEGMENTS:
 - Use the Google Search tool to find market research and trend data
 </constraints>
 
-Research market gaps for:
+Research market gaps for: {topic} 
 `

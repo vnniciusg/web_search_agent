@@ -101,5 +101,5 @@ PERFORMANCE REQUIREMENTS:
 - Use the Google Search tool to find technical documentation and benchmarks
 </constraints>
 
-Research technical limitations for:
+Research technical limitations for: {topic} 
 `

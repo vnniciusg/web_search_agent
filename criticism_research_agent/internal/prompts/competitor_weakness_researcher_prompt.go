@@ -96,5 +96,5 @@ Competitor: Salesforce
 - Use the Google Search tool to find competitive intelligence
 </constraints>
 
-Research competitor weaknesses for:
+Research competitor weaknesses for: {topic} 
 `

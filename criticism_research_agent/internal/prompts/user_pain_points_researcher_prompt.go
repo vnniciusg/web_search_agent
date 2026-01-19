@@ -103,5 +103,5 @@ CRITICAL PAIN POINTS:
 - Use the Google Search tool to find authentic user feedback
 </constraints>
 
-Research user pain points for:
+Research user pain points for: {topic} 
 `
